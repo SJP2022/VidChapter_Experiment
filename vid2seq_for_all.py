@@ -146,7 +146,7 @@ def chapter(vid):
     texts, starts, ends = [], [], []
     for i in range(len(segments)):
         text = segments[i]['text']
-        if text.strip():
+        if len(text.strip())>1:
             texts.append(text)
             starts.append(segments[i]['start'])
             ends.append(segments[i]['end'])
@@ -239,6 +239,6 @@ random.shuffle(videos)
 #videos = ['0AjYz-s4Rek']
 #videos = ['sFKOnFMJF2Q']
 #videos = ['sWEbq5Ry63Q']
-#videos = ['ZL7xefcDWYc']
+videos = ['uPqh5uA1mhA']
 for vid in videos:
     chapter(vid)
